@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -21,16 +22,39 @@
                 <a href="index.html" class="btn btn-primary">Home</a>
             </div>
             <div class="col-6 col-md-3">
-                <a href="#ai-website" class="btn btn-primary">AI Website</a>
+                <a href="#standoff" class="btn btn-primary">Standoff</a>
             </div>
             <div class="col-6 col-md-3">
-                <a href="#standoff" class="btn btn-primary">Standoff</a>
+                <a href="#ai-website" class="btn btn-primary">AI Website</a>
             </div>
             <div class="col-6 col-md-3">
                 <a href="#desert-delver" class="btn btn-primary">Desert Delver</a>
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-md-12">
+                <h1 id="standoff">Standoff</h1>
+            </div>
+            <div class="col-md-12">
+                <video controls class="img-fluid">
+                    <source src="assets/videos/standoff_video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-md-6">
+                <p>Standoff is a collection of 2D mini-games I and my team developed to learn how to use AR. It was
+                    based around using playing
+                    cards to activate both which minigame to play, and what mode. This would be determined through
+                    the rank / suit of a playing card. In this project, I got to work on making a runner minigame with changing speed and coin gain based on the chosen card.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p>By making this game, I learned how to implement AR
+                    mechanics into gameplay through the use of Vuforia, and gained experience making fun, condensed,
+                    experiences for the player. It was fun project to build as it was one of, if not my first,
+                    experiences working on a game as a team.</p>
+            </div>
+        </div>
 
         <div class="row">
             <div class="col-md-12">
@@ -43,11 +67,11 @@
                 <h2>Server Side Validation</h2>
                 <pre><code class="language-javascript">check('question1', 'Please enter a valid age').isInt({ min: 0, max: 1500 });
  check('question2', 'Please enter your pet\'s breed').isLength({ min: 3 });
- check('question3', 'Please give the level of severity').isIn(['experiencing mild', 'experiencing moderate', 'experiencing severe']);
+ check('question3', 'Please give the level of severity').isIn(['mild', 'moderate', 'severe']);
  check('question4', 'Please state your concern').isLength({ min: 3 });
  check('question5_num', 'Please enter the duration').isInt({ min: 1 });
  check('question5_unit', 'Please select a duration type').isIn(['minutes', 'hours', 'days', 'months']);
- check('question6', 'Please keep other symptoms under 50 characters').optional().isLength({ max: 500 });
+ check('question6', 'Please keep other symptoms under 500 characters').optional().isLength({ max: 500 });
  check('insured', 'Please provide insurance information').isIn(['yes', 'no']);
  check('max_tokens', 'Please enter a valid response length (50-500)').isInt({ min: 50, max: 500 });</code></pre>
             </div>
@@ -93,32 +117,8 @@
             </div>
             <div class="col-md-4">
                 <p>In making this site, I learned how to user input with form validation, implementing an API with a
-                    secured server made with node.js communicating with the client, and both the importance of and
+                    server made through node.js communicating with the client, and both the importance of and
                     how to display visual feedback on a webpage.</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h1 id="standoff">Standoff</h1>
-            </div>
-            <div class="col-md-12">
-                <video controls class="img-fluid">
-                    <source src="assets/videos/standoff_video.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="col-md-6">
-                <p>Standoff is a collection of 2D mini-games I and my team developed to learn how to use AR. It was
-                    based around using playing
-                    cards to activate both which minigame to play, and what mode. This would be determined through
-                    the rank / suit of a playing card. In this project, I got to work on making a runner minigame with changing speed and coin gain based on the chosen card.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <p>By making this game, I learned how to implement AR
-                    mechanics into gameplay through the use of Vuforia, and gained experience making fun, condensed,
-                    experiences for the player. It was fun project to build as it was one of, if not my first,
-                    experiences working on a game as a team.</p>
             </div>
         </div>
 
